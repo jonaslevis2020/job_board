@@ -7,6 +7,14 @@
 
 {% block content %}
 <div class="container">
-    <h1 class="display-4">Find Jobs...</h1>
+    <h1 class="display-5">Find Jobs...</h1>
+    <p>
+        {{request.headers}}
+    </p>
+    <div class="mb-3">
+      <label for="" class="form-label">Email</label>
+      <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="abc@mail.com">
+      <small id="emailHelpId" class="form-text text-muted">Help text</small>
+    </div>
 </div>
 {% endblock %}
